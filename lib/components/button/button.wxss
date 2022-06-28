@@ -1,0 +1,49 @@
+/**
+ * Reset defaults.
+ */
+
+button:not([size=mini]) {
+  margin-left: 0;
+  margin-right: 0;
+  width: auto;
+}
+
+button[disabled] {
+  color: initial;
+}
+
+/**
+ * Component
+ */
+
+.button {
+  display: block;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #595959;
+  background-color: #e5e7eb;
+}
+
+.button:not([disabled]):active {
+  background-color: #d1d5db;
+}
+
+.button[disabled] {
+  color: #bfbfbf;
+  background-color: #f9fafb;
+}
+
+.button[type="primary"] {
+  color: #fff;
+  background-color: #434343;
+}
+
+.button[type="primary"]:not([disabled]):active {
+  background-color: #1f1f1f;
+}
+
+.button[type="primary"][disabled] {
+  color: #bfbfbf;
+  background-color: #d9d9d9;
+}

@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "demo/index",
+    "demo/radio/index",
+    "demo/checkbox/index",
+    "demo/button/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "Demo",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f8fafc"
+  },
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "checkbox-group": "../../components/checkbox/group",
+    "checkbox-item": "../../components/checkbox/item"
+  }
+}

@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="heading">
+    <text>Radio Group</text>
+  </view>
+
+  <view class="session">
+    <radio-group
+      bindchange="onChange"
+    >
+      <radio-item
+        wx:for="{{ items }}"
+        wx:key="value"
+        value="{{ item.value }}"
+        checked="{{ item.value === value }}"
+      >
+        {{ item.label }}
+      </radio-item>
+    </radio-group>
+
+    <view class="help-text" bindtap="addItem">
+      Current value: {{ value }}
+    </view>
+  </view>
+</view>

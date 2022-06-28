@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Radio Group",
+  "usingComponents": {
+    "radio-group": "../../components/radio/group",
+    "radio-item": "../../components/radio/item"
+  }
+}

@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="heading">
+    <text>Paper UI</text>
+  </view>
+
+  <view class="help-text">
+    <text>A clean, minimal UI for WeChat Mini Program.</text>
+  </view>
+
+  <view class="session">
+    <view bindtap="toDemo" data-demo="checkbox">
+      <text>Checkbox</text>
+    </view>
+
+    <view bindtap="toDemo" data-demo="radio">
+      <text>Radio</text>
+    </view>
+    
+    <view bindtap="toDemo" data-demo="button">
+      <text>Button</text>
+    </view>
+  </view>
+</view>

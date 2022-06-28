@@ -1,0 +1,28 @@
+.radio-item {
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #262626;
+  transition: color,background-color 50ms linear;
+}
+
+.radio-item:not(.item-active):active {
+  background-color: #e5e7eb;
+}
+
+.item-content {
+  padding: 1rem 1.25rem 1rem 0;
+  border-top: 1rpx solid #bfbfbf;
+  transition: border-bottom-color 50ms linear;
+}
+
+.item-active {
+  color: #fafafa;
+  background-color: #434343;
+}
+
+.item-active .item-content,
+.item-active + .radio-item .item-content,
+.radio-item:first-child .item-content {
+  border-top-color: transparent;
+}

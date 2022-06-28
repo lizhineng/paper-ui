@@ -1,0 +1,5 @@
+<view
+  class="radio-group"
+>
+  <slot></slot>
+</view>

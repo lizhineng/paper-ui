@@ -1,0 +1,37 @@
+<view class="page">
+  <view class="heading">
+    <text>Button</text>
+  </view>
+
+  <view class="session">
+    <view class="session-title">
+      <text>Primary</text>
+    </view>
+
+    <view class="demo">
+      <view style="margin-bottom: .5rem;">
+        <x-button type="primary">Primary button</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button type="primary" disabled>Disabled button</x-button>
+      </view>
+    </view>
+  </view>
+
+  <view class="session">
+    <view class="session-title">
+      <text>Secondary</text>
+    </view>
+
+    <view class="demo">
+      <view style="margin-bottom: .5rem;">
+        <x-button>Secondary button</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button disabled>Disabled button</x-button>
+      </view>
+    </view>
+  </view>
+</view>

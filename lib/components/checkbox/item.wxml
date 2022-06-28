@@ -1,0 +1,6 @@
+<view
+  class="{{ classes }}"
+  bindtap="onTap"
+>
+  <slot></slot>
+</view>

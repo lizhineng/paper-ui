@@ -1,0 +1,55 @@
+<view class="page">
+  <view class="heading">
+    <text>Checkbox</text>
+  </view>
+
+  <view class="session">
+    <view class="session-title">
+      <text>Default</text>
+    </view>
+
+    <view class="demo">
+      <checkbox-group bindchange="onChange">
+        <view
+          wx:for="{{ items }}"
+          wx:key="value"
+          style="margin-bottom: .5rem;"
+        >
+          <checkbox-item
+            value="{{ item.value }}"
+            checked="{{ item.checked }}"
+          >
+            {{ item.label }}
+          </checkbox-item>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+
+  <view class="session">
+    <view class="session-title">
+      <text>Two items in one row</text>
+    </view>
+
+    <view class="demo">
+      <checkbox-group bindchange="onChange">
+        <view
+          style="display: flex; margin-left: -.25rem; margin-right: -.25rem; flex-wrap: wrap;"
+        >
+          <view
+            wx:for="{{ items }}"
+            wx:key="value"
+            style="margin-bottom: .5rem; padding-left: .25rem; padding-right: .25rem; flex: 0 0 auto; width: 50%; box-sizing: border-box;"
+          >
+            <checkbox-item
+              value="{{ item.value }}"
+              checked="{{ item.checked }}"
+            >
+              {{ item.label }}
+            </checkbox-item>
+          </view>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+</view>
