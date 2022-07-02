@@ -18,7 +18,7 @@ Component({
       this.setData({
         classes: [
           'radio-item',
-          value ? 'item-active' : null
+          value ? 'item-checked' : null
         ].filter(x => x).join(' ')
       })
     }

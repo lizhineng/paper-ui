@@ -1,28 +1,44 @@
+page {
+  --pui-radio-text-color: var(--color-gray-600);
+  --pui-radio-bg-color: var(--color-gray-100);
+  --pui-radio-active-bg-color: var(--color-gray-200);
+  --pui-radio-divider-color: var(--color-gray-300);
+
+  --pui-radio-checked-text-color: var(--color-primary-100);
+  --pui-radio-checked-bg-color: var(--color-primary-600);
+  --pui-radio-checked-active-bg-color: var(--color-primary-700);
+}
+
 .radio-item {
   padding-left: 1.25rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #262626;
+  color: var(--pui-radio-text-color);
+  background-color: var(--pui-radio-bg-color);
   transition: color,background-color 50ms linear;
 }
 
-.radio-item:not(.item-active):active {
-  background-color: #e5e7eb;
+.radio-item:active {
+  background-color: var(--pui-radio-active-bg-color);
 }
 
 .item-content {
   padding: 1rem 1.25rem 1rem 0;
-  border-top: 1rpx solid #bfbfbf;
+  border-top: 0.03125rem solid var(--pui-radio-divider-color);
   transition: border-bottom-color 50ms linear;
 }
 
-.item-active {
-  color: #fafafa;
-  background-color: #434343;
+.item-checked {
+  color: var(--pui-radio-checked-text-color);
+  background-color: var(--pui-radio-checked-bg-color);
 }
 
-.item-active .item-content,
-.item-active + .radio-item .item-content,
+.item-checked:active {
+  background-color: var(--pui-radio-checked-active-bg-color);
+}
+
+.item-checked .item-content,
+.item-checked + .radio-item .item-content,
 .radio-item:first-child .item-content {
   border-top-color: transparent;
 }

@@ -4,7 +4,7 @@
   </view>
 
   <view class="help-text">
-    <text>A clean, minimal UI for WeChat Mini Program.</text>
+    <text>A clean, minimal user interface for WeChat Mini Program.</text>
   </view>
 
   <view class="session">

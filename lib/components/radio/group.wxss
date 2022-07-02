@@ -1,5 +1,4 @@
 .radio-group {
-  background-color: #f3f4f6;
   border-radius: .375rem;
   overflow: hidden;
 }

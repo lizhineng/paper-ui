@@ -19,7 +19,7 @@ Component({
       this.setData({
         classes: [
           'checkbox-item',
-          value ? 'item-active' : null
+          value ? 'item-checked' : null
         ].filter(x => x).join(' ')
       })
     }
