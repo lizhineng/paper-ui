@@ -30,34 +30,43 @@ button[disabled] {
  * Component
  */
 
-.button {
-  display: block;
+.btn {
+  display: inline-block;
   padding: .75rem 1.5rem;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--pui-btn-text-color);
   background-color: var(--pui-btn-bg-color);
+  box-sizing: border-box;
 }
 
-.button:not([disabled]):active {
+.btn:not([disabled]):active {
   background-color: var(--pui-btn-active-bg-color);
 }
 
-.button[disabled] {
+.btn[disabled] {
   color: var(--pui-btn-disabled-text-color);
   background-color: var(--pui-btn-disabled-bg-color);
 }
 
-.button[type="primary"] {
+.btn[type="primary"] {
   color: var(--pui-btn-primary-text-color);
   background-color: var(--pui-btn-primary-bg-color);
 }
 
-.button[type="primary"]:not([disabled]):active {
+.btn[type="primary"]:not([disabled]):active {
   background-color: var(--pui-btn-primary-active-bg-color);
 }
 
-.button[type="primary"][disabled] {
+.btn[type="primary"][disabled] {
   color: var(--pui-btn-primary-disabled-text-color);
   background-color: var(--pui-btn-primary-disabled-bg-color);
+}
+
+.btn-pill {
+  border-radius: 3rem;
+}
+
+.btn-block {
+  display: block;
 }

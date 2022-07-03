@@ -34,4 +34,36 @@
       </view>
     </view>
   </view>
+
+  <view class="session">
+    <view class="session-title">
+      <text>Pill button</text>
+    </view>
+
+    <view class="demo">
+      <view style="margin-bottom: .5rem;">
+        <x-button type="primary" pill>Primary pill</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button pill>Secondary pill</x-button>
+      </view>
+    </view>
+  </view>
+
+  <view class="session">
+    <view class="session-title">
+      <text>Block</text>
+    </view>
+
+    <view class="demo">
+      <view style="margin-bottom: .5rem;">
+        <x-button type="primary" block>Primary pill</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button block>Secondary pill</x-button>
+      </view>
+    </view>
+  </view>
 </view>
