@@ -4,6 +4,10 @@ Component({
       type: String,
       value: 'secondary'
     },
+    size: {
+      type: String,
+      value: 'md'
+    },
     pill: {
       type: Boolean,
       value: false
@@ -19,17 +23,18 @@ Component({
   },
 
   data: {
-    classes: 'btn'
+    classes: 'btn btn-md'
   },
 
   observers: {
-    'pill, block'(pill, block) {
+    'size, pill, block'(size, pill, block) {
       this.setData({
         classes: [
           'btn',
+          size ? 'btn-' + size : null,
           pill ? 'btn-pill' : null,
           block ? 'btn-block' : null
-        ].filter(x => x)
+        ].filter(x => x).join(' ')
       })
     }
   }

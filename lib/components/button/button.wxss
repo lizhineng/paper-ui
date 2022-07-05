@@ -32,9 +32,6 @@ button[disabled] {
 
 .btn {
   display: inline-block;
-  padding: .75rem 1.5rem;
-  font-size: 1rem;
-  line-height: 1.5;
   color: var(--pui-btn-text-color);
   background-color: var(--pui-btn-bg-color);
   box-sizing: border-box;
@@ -70,4 +67,36 @@ button[disabled] {
 
 .btn-block {
   display: block;
+}
+
+/**
+ * Button sizes
+ */
+
+.btn-md {
+  padding: .75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-lg {
+  padding: .75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2;
+}
+
+.btn-sm {
+  padding: .5rem 1rem;
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.btn-xs {
+  padding: .3125rem 1rem;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.25rem;
 }

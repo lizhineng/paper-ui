@@ -37,6 +37,30 @@
 
   <view class="session">
     <view class="session-title">
+      <text>Sizes</text>
+    </view>
+
+    <view class="demo">
+      <view style="margin-bottom: .5rem;">
+        <x-button size="lg">Large size</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button>Regular size</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button size="sm">Small size</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button size="xs">Extra small size</x-button>
+      </view>
+    </view>
+  </view>
+
+  <view class="session">
+    <view class="session-title">
       <text>Pill button</text>
     </view>
 
