@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Icon",
+  "usingComponents": {
+    "x-button": "../../components/button/button",
+    "x-icon": "../../components/icon/icon"
+  }
+}

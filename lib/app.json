@@ -3,7 +3,8 @@
     "demo/index",
     "demo/radio/index",
     "demo/checkbox/index",
-    "demo/button/index"
+    "demo/button/index",
+    "demo/icon/index"
   ],
   "window": {
     "navigationBarTitleText": "Demo",
