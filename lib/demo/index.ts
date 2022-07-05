@@ -1,6 +1,6 @@
 Page({
   toDemo(e: WechatMiniprogram.CustomEvent) {
-    const { demo } = e.currentTarget.dataset
+    const { demo } = e.target.dataset
 
     if (demo) {
       wx.navigateTo({

@@ -8,16 +8,18 @@
   </view>
 
   <view class="session">
-    <view bindtap="toDemo" data-demo="checkbox">
-      <text>Checkbox</text>
-    </view>
+    <x-radio-group bindtap="toDemo">
+      <x-radio-item data-demo="checkbox">
+        Checkbox
+      </x-radio-item>
 
-    <view bindtap="toDemo" data-demo="radio">
-      <text>Radio</text>
-    </view>
-    
-    <view bindtap="toDemo" data-demo="button">
-      <text>Button</text>
-    </view>
+      <x-radio-item data-demo="radio">
+        Radio
+      </x-radio-item>
+
+      <x-radio-item data-demo="button">
+        Button
+      </x-radio-item>
+    </x-radio-group>
   </view>
 </view>

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "x-radio-group": "../components/radio/group",
+    "x-radio-item": "../components/radio/item"
+  }
 }
