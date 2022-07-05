@@ -2,11 +2,13 @@ Component({
   options: {
     virtualHost: true
   },
+
   properties: {
     value: {
       type: String,
       optionalTypes: [Number]
     },
+    
     checked: {
       type: Boolean,
       value: false

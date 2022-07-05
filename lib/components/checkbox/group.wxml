@@ -1,3 +1,5 @@
-<view>
+<view
+  bind:item-change="onChange"
+>
   <slot></slot>
 </view>

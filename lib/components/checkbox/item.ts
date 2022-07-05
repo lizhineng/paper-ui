@@ -14,6 +14,12 @@ Component({
     classes: 'checkbox-item'
   },
 
+  relations: {
+    './group': {
+      type: 'parent'
+    }
+  },
+
   observers: {
     checked(value) {
       this.setData({
@@ -27,10 +33,11 @@ Component({
 
   methods: {
     onTap() {
-      this.triggerEvent('change', {
+      this.triggerEvent('item-change', {
         value: this.data.value
       }, {
-        bubbles: true
+        bubbles: true,
+        composed: true
       })
     }
   }

@@ -9,9 +9,9 @@
     </view>
 
     <view class="demo">
-      <checkbox-group bindchange="onChange">
+      <checkbox-group bindchange="onChange1">
         <view
-          wx:for="{{ items }}"
+          wx:for="{{ items1 }}"
           wx:key="value"
           style="margin-bottom: .5rem;"
         >
@@ -32,12 +32,12 @@
     </view>
 
     <view class="demo">
-      <checkbox-group bindchange="onChange">
+      <checkbox-group bindchange="onChange2">
         <view
           style="display: flex; margin-left: -.25rem; margin-right: -.25rem; flex-wrap: wrap;"
         >
           <view
-            wx:for="{{ items }}"
+            wx:for="{{ items2 }}"
             wx:key="value"
             style="margin-bottom: .5rem; padding-left: .25rem; padding-right: .25rem; flex: 0 0 auto; width: 50%; box-sizing: border-box;"
           >
