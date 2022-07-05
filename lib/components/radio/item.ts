@@ -15,17 +15,6 @@ Component({
     }
   },
 
-  observers: {
-    checked(value) {
-      this.setData({
-        classes: [
-          'radio-item',
-          value ? 'item-checked' : null
-        ].filter(x => x).join(' ')
-      })
-    }
-  },
-
   relations: {
     './group': {
       type: 'parent'

@@ -1,5 +1,5 @@
 <view
-  class="{{ classes }}"
+  class="radio-item {{ checked ? 'item-checked' : '' }}"
   bindtap="onTap"
 >
   <view class="item-content">
