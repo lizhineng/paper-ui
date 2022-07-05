@@ -5,7 +5,7 @@
 
   <view class="session">
     <view class="session-title">
-      <text>Primary</text>
+      <text>Types</text>
     </view>
 
     <view class="demo">
@@ -14,23 +14,31 @@
       </view>
 
       <view style="margin-bottom: .5rem;">
-        <x-button type="primary" disabled>Disabled button</x-button>
+        <x-button type="secondary">Secondary button</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button>Button</x-button>
       </view>
     </view>
   </view>
 
   <view class="session">
     <view class="session-title">
-      <text>Secondary</text>
+      <text>Disabled</text>
     </view>
 
     <view class="demo">
       <view style="margin-bottom: .5rem;">
-        <x-button>Secondary button</x-button>
+        <x-button type="primary" disabled>Primary button</x-button>
       </view>
 
       <view style="margin-bottom: .5rem;">
-        <x-button disabled>Disabled button</x-button>
+        <x-button type="secondary" disabled>Secondary button</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button disabled>Button</x-button>
       </view>
     </view>
   </view>
@@ -55,6 +63,38 @@
 
       <view style="margin-bottom: .5rem;">
         <x-button size="xs">Extra small size</x-button>
+      </view>
+    </view>
+  </view>
+
+  <view class="session">
+    <view class="session-title">
+      <text>Text button</text>
+    </view>
+
+    <view class="demo">
+      <view style="margin-bottom: .5rem;">
+        <x-button type="primary" text>Primary text</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button type="secondary" text>Secondary text</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button text>Text</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button type="primary" disabled text>Disabled primary</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button type="secondary" disabled text>Disabled secondary</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button disabled text>Disabled text</x-button>
       </view>
     </view>
   </view>

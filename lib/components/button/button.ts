@@ -2,11 +2,15 @@ Component({
   properties: {
     type: {
       type: String,
-      value: 'secondary'
+      value: ''
     },
     size: {
       type: String,
       value: 'md'
+    },
+    text: {
+      type: Boolean,
+      value: false
     },
     pill: {
       type: Boolean,
@@ -19,23 +23,6 @@ Component({
     disabled: {
       type: Boolean,
       value: false
-    }
-  },
-
-  data: {
-    classes: 'btn btn-md'
-  },
-
-  observers: {
-    'size, pill, block'(size, pill, block) {
-      this.setData({
-        classes: [
-          'btn',
-          size ? 'btn-' + size : null,
-          pill ? 'btn-pill' : null,
-          block ? 'btn-block' : null
-        ].filter(x => x).join(' ')
-      })
     }
   }
 })
