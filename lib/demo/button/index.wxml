@@ -117,6 +117,38 @@
 
   <view class="session">
     <view class="session-title">
+      <text>Outline button</text>
+    </view>
+
+    <view class="demo">
+      <view style="margin-bottom: .5rem;">
+        <x-button type="primary" outline>Primary</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button type="secondary" outline>Secondary</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button outline>Button</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button type="primary" disabled outline>Primary</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button type="secondary" disabled outline>Secondary</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button disabled outline>Button</x-button>
+      </view>
+    </view>
+  </view>
+
+  <view class="session">
+    <view class="session-title">
       <text>Block</text>
     </view>
 

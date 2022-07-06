@@ -16,6 +16,10 @@ Component({
       type: Boolean,
       value: false
     },
+    outline: {
+      type: Boolean,
+      value: false
+    },
     block: {
       type: Boolean,
       value: false

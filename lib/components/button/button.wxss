@@ -3,19 +3,19 @@ page {
   --pui-btn-contrast-color: var(--color-gray-100);
   --pui-btn-active-main-color: var(--color-gray-700);
   --pui-btn-disabled-main-color: var(--color-gray-100);
-  --pui-btn-disabled-contrast-color: var(--color-gray-500);
+  --pui-btn-disabled-contrast-color: var(--color-gray-300);
 
   --pui-btn-primary-main-color: var(--color-primary-600);
   --pui-btn-primary-contrast-color: var(--color-primary-100);
   --pui-btn-primary-active-main-color: var(--color-primary-700);
   --pui-btn-primary-disabled-main-color: var(--color-primary-100);
-  --pui-btn-primary-disabled-contrast-color: var(--color-primary-500);
+  --pui-btn-primary-disabled-contrast-color: var(--color-primary-300);
 
   --pui-btn-secondary-main-color: var(--color-secondary-600);
   --pui-btn-secondary-contrast-color: var(--color-secondary-100);
   --pui-btn-secondary-active-main-color: var(--color-secondary-700);
   --pui-btn-secondary-disabled-main-color: var(--color-secondary-100);
-  --pui-btn-secondary-disabled-contrast-color: var(--color-secondary-500);
+  --pui-btn-secondary-disabled-contrast-color: var(--color-secondary-300);
 }
 
 /**
@@ -169,6 +169,63 @@ button[disabled] {
   font-size: .875rem;
   line-height: 1.25rem;
 }
+
+
+/**
+ * Button outline
+ */
+
+.btn-outline {
+  color: var(--pui-btn-main-color);
+  background-color: transparent;
+  border: .0625rem solid var(--pui-btn-main-color);
+}
+
+.btn-outline:active {
+  color: var(--pui-btn-contrast-color);
+  background-color: var(--pui-btn-main-color);
+}
+
+.btn-outline[disabled] {
+  color: var(--pui-btn-disabled-contrast-color);
+  background-color: transparent;
+  border-color: var(--pui-btn-disabled-contrast-color);
+}
+
+.btn-outline[type="primary"] {
+  color: var(--pui-btn-primary-main-color);
+  background-color: transparent;
+  border: .0625rem solid var(--pui-btn-primary-main-color);
+}
+
+.btn-outline[type="primary"]:active {
+  color: var(--pui-btn-primary-contrast-color);
+  background-color: var(--pui-btn-primary-main-color);
+}
+
+.btn-outline[type="primary"][disabled] {
+  color: var(--pui-btn-primary-disabled-contrast-color);
+  background-color: transparent;
+  border-color: var(--pui-btn-primary-disabled-contrast-color);
+}
+
+.btn-outline[type="secondary"] {
+  color: var(--pui-btn-secondary-main-color);
+  background-color: transparent;
+  border: .0625rem solid var(--pui-btn-secondary-main-color);
+}
+
+.btn-outline[type="secondary"]:active {
+  color: var(--pui-btn-secondary-contrast-color);
+  background-color: var(--pui-btn-secondary-main-color);
+}
+
+.btn-outline[type="secondary"][disabled] {
+  color: var(--pui-btn-secondary-disabled-contrast-color);
+  background-color: transparent;
+  border-color: var(--pui-btn-secondary-disabled-contrast-color);
+}
+
 
 /**
  * Mics

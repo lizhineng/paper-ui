@@ -1,7 +1,7 @@
 <button
   type="{{ type }}"
   disabled="{{ disabled }}"
-  class="btn btn-{{ size }} {{ text ? 'btn-text' : '' }} {{ pill ? 'btn-pill' : '' }} {{ block ? 'btn-block' : '' }}"
+  class="btn btn-{{ size }} {{ text ? 'btn-text' : '' }} {{ pill ? 'btn-pill' : '' }} {{ block ? 'btn-block' : '' }} {{ outline ? 'btn-outline' : '' }}"
 >
   <slot></slot>
 </button>
