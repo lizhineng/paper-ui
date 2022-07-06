@@ -130,7 +130,7 @@ button:not([size="mini"]) {
 .btn-outline[type="primary"] {
   color: var(--pui-btn-main-color);
   background-color: transparent;
-  border: .0625rem solid var(--pui-btn-main-color);
+  box-shadow: 0 0 0 .0625rem var(--pui-btn-main-color);
 }
 
 .btn-outline:active {
@@ -142,7 +142,7 @@ button:not([size="mini"]) {
 .btn-outline[type="primary"][disabled] {
   color: var(--pui-btn-disabled-contrast-color);
   background-color: transparent;
-  border-color: var(--pui-btn-disabled-contrast-color);
+  box-shadow: 0 0 0 .0625rem var(--pui-btn-disabled-contrast-color);
 }
 
 
