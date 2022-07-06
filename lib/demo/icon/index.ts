@@ -20,7 +20,26 @@ Page({
           'filter',
           'share',
           'plus-circle',
-          'gears'
+          'speech-bubble',
+          'eye-open',
+          'eye-closed'
+        ]
+      },
+
+      {
+        label: 'Object',
+        category: 'object',
+        icons: [
+          'shopping-cart',
+          'camera',
+          'gears',
+          'calendar',
+          'mail',
+          'lock',
+          'qrcode',
+          'bell',
+          'billboard',
+          'shield'
         ]
       },
 
@@ -56,7 +75,8 @@ Page({
         icons: [
           'trending-up',
           'trending-down',
-          'currency-yen'
+          'currency-yen',
+          'cash'
         ]
       },
 
@@ -66,6 +86,14 @@ Page({
         icons: [
           'globe',
           'location'
+        ]
+      },
+
+      {
+        label: 'Transportation',
+        category: 'transportation',
+        icons: [
+          'truck'
         ]
       }
     ]
