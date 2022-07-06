@@ -1,36 +1,42 @@
-page {
-  --pui-btn-main-color: var(--color-gray-600);
-  --pui-btn-contrast-color: var(--color-gray-100);
-  --pui-btn-active-main-color: var(--color-gray-700);
-  --pui-btn-disabled-main-color: var(--color-gray-100);
-  --pui-btn-disabled-contrast-color: var(--color-gray-300);
-
-  --pui-btn-primary-main-color: var(--color-primary-600);
-  --pui-btn-primary-contrast-color: var(--color-primary-100);
-  --pui-btn-primary-active-main-color: var(--color-primary-700);
-  --pui-btn-primary-disabled-main-color: var(--color-primary-100);
-  --pui-btn-primary-disabled-contrast-color: var(--color-primary-300);
-
-  --pui-btn-secondary-main-color: var(--color-secondary-600);
-  --pui-btn-secondary-contrast-color: var(--color-secondary-100);
-  --pui-btn-secondary-active-main-color: var(--color-secondary-700);
-  --pui-btn-secondary-disabled-main-color: var(--color-secondary-100);
-  --pui-btn-secondary-disabled-contrast-color: var(--color-secondary-300);
-}
-
 /**
  * Reset defaults.
  */
 
-button:not([size=mini]) {
+button:not([size="mini"]) {
   margin-left: 0;
   margin-right: 0;
   width: auto;
 }
 
-button[disabled] {
-  color: initial;
+
+/**
+ * Button types
+ */
+
+.btn {
+  --pui-btn-main-color: var(--color-gray-600);
+  --pui-btn-contrast-color: var(--color-gray-100);
+  --pui-btn-active-main-color: var(--color-gray-700);
+  --pui-btn-disabled-main-color: var(--color-gray-100);
+  --pui-btn-disabled-contrast-color: var(--color-gray-300);
 }
+
+.btn[type="primary"] {
+  --pui-btn-main-color: var(--color-primary-600);
+  --pui-btn-contrast-color: var(--color-primary-100);
+  --pui-btn-active-main-color: var(--color-primary-700);
+  --pui-btn-disabled-main-color: var(--color-primary-100);
+  --pui-btn-disabled-contrast-color: var(--color-primary-300);
+}
+
+.btn[type="secondary"] {
+  --pui-btn-main-color: var(--color-secondary-600);
+  --pui-btn-contrast-color: var(--color-secondary-100);
+  --pui-btn-active-main-color: var(--color-secondary-700);
+  --pui-btn-disabled-main-color: var(--color-secondary-100);
+  --pui-btn-disabled-contrast-color: var(--color-secondary-300);
+}
+
 
 /**
  * Component default
@@ -38,56 +44,27 @@ button[disabled] {
 
 .btn {
   display: inline-block;
+  text-align: center;
   color: var(--pui-btn-contrast-color);
   background-color: var(--pui-btn-main-color);
+  border-radius: .375rem;
   box-sizing: border-box;
   transition: color,background-color 50ms linear;
+}
+
+.btn[type="primary"] {
+  color: var(--pui-btn-contrast-color);
+  background-color: var(--pui-btn-main-color);
 }
 
 .btn:active {
   background-color: var(--pui-btn-active-main-color);
 }
 
-.btn[disabled] {
+.btn[disabled],
+.btn[type="primary"][disabled] {
   color: var(--pui-btn-disabled-contrast-color);
   background-color: var(--pui-btn-disabled-main-color);
-}
-
-
-/**
- * Primary type
- */
-
- .btn[type="primary"] {
-  color: var(--pui-btn-primary-contrast-color);
-  background-color: var(--pui-btn-primary-main-color);
-}
-
-.btn[type="primary"]:active {
-  background-color: var(--pui-btn-primary-active-main-color);
-}
-
-.btn[type="primary"][disabled] {
-  background-color: var(--pui-btn-primary-disabled-main-color);
-}
-
-
-/**
- * Secondary type
- */
-
- .btn[type="secondary"] {
-  color: var(--pui-btn-secondary-contrast-color);
-  background-color: var(--pui-btn-secondary-main-color);
-}
-
-.btn[type="secondary"]:active {
-  background-color: var(--pui-btn-secondary-active-main-color);
-}
-
-.btn[type="secondary"][disabled] {
-  color: var(--pui-btn-secondary-disabled-contrast-color);
-  background-color: var(--pui-btn-secondary-disabled-main-color);
 }
 
 
@@ -95,7 +72,8 @@ button[disabled] {
  * Button text
  */
 
-.btn-text {
+.btn-text,
+.btn-text[type="primary"] {
   color: var(--pui-btn-main-color);
   background-color: transparent;
 }
@@ -104,36 +82,9 @@ button[disabled] {
   background-color: var(--pui-btn-contrast-color);
 }
 
-.btn-text[disabled] {
-  color: var(--pui-btn-disabled-contrast-color);
-  background-color: transparent;
-}
-
-.btn-text[type="primary"] {
-  color: var(--pui-btn-primary-main-color);
-  background-color: transparent;
-}
-
-.btn-text[type="primary"]:active {
-  background-color: var(--pui-btn-primary-contrast-color);
-}
-
+.btn-text[disabled],
 .btn-text[type="primary"][disabled] {
-  color: var(--pui-btn-primary-disabled-contrast-color);
-  background-color: transparent;
-}
-
-.btn-text[type="secondary"] {
-  color: var(--pui-btn-secondary-main-color);
-  background-color: transparent;
-}
-
-.btn-text[type="secondary"]:active {
-  background-color: var(--pui-btn-secondary-contrast-color);
-}
-
-.btn-text[type="secondary"][disabled] {
-  color: var(--pui-btn-secondary-disabled-contrast-color);
+  color: var(--pui-btn-disabled-contrast-color);
   background-color: transparent;
 }
 
@@ -175,7 +126,8 @@ button[disabled] {
  * Button outline
  */
 
-.btn-outline {
+.btn-outline,
+.btn-outline[type="primary"] {
   color: var(--pui-btn-main-color);
   background-color: transparent;
   border: .0625rem solid var(--pui-btn-main-color);
@@ -186,44 +138,11 @@ button[disabled] {
   background-color: var(--pui-btn-main-color);
 }
 
-.btn-outline[disabled] {
+.btn-outline[disabled],
+.btn-outline[type="primary"][disabled] {
   color: var(--pui-btn-disabled-contrast-color);
   background-color: transparent;
   border-color: var(--pui-btn-disabled-contrast-color);
-}
-
-.btn-outline[type="primary"] {
-  color: var(--pui-btn-primary-main-color);
-  background-color: transparent;
-  border: .0625rem solid var(--pui-btn-primary-main-color);
-}
-
-.btn-outline[type="primary"]:active {
-  color: var(--pui-btn-primary-contrast-color);
-  background-color: var(--pui-btn-primary-main-color);
-}
-
-.btn-outline[type="primary"][disabled] {
-  color: var(--pui-btn-primary-disabled-contrast-color);
-  background-color: transparent;
-  border-color: var(--pui-btn-primary-disabled-contrast-color);
-}
-
-.btn-outline[type="secondary"] {
-  color: var(--pui-btn-secondary-main-color);
-  background-color: transparent;
-  border: .0625rem solid var(--pui-btn-secondary-main-color);
-}
-
-.btn-outline[type="secondary"]:active {
-  color: var(--pui-btn-secondary-contrast-color);
-  background-color: var(--pui-btn-secondary-main-color);
-}
-
-.btn-outline[type="secondary"][disabled] {
-  color: var(--pui-btn-secondary-disabled-contrast-color);
-  background-color: transparent;
-  border-color: var(--pui-btn-secondary-disabled-contrast-color);
 }
 
 
