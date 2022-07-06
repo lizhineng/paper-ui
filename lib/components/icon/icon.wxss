@@ -1,14 +1,16 @@
 page {
   --pui-icon-color: var(--color-primary-600);
+  --pui-icon-size: 1.75rem;
 }
 
 .icon {
   display: block;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: var(--pui-icon-size);
+  height: var(--pui-icon-size);
   background-color: var(--pui-icon-color);
   -webkit-mask: var(--pui-icon-mask) center/cover no-repeat;
   mask: var(--pui-icon-mask) center/cover no-repeat;
+  overflow: hidden;
 }
 
 .icon-arrow-up {
