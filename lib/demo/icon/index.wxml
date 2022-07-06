@@ -12,7 +12,7 @@
       <text>{{ item.label }}</text>
     </view>
 
-    <view class="demo flex">
+    <view class="demo">
       <x-button
         wx:for="{{ item.icons }}"
         wx:key="*this"

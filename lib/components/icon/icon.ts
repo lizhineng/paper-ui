@@ -1,5 +1,6 @@
 Component({
   properties: {
-    value: String
+    value: String,
+    color: String
   }
 })
