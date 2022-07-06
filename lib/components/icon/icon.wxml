@@ -1,4 +1,4 @@
 <image
   class="icon icon-{{ value }}"
-  style="{{ color ? '--pui-icon-color: ' + color : '' }} {{ size ? '--pui-icon-size: ' + size : '' }}"
+  style="{{ color ? '--pui-icon-color: ' + color + '; ' : '' }} {{ size ? '--pui-icon-size: ' + size + '; ' : '' }}"
 />
