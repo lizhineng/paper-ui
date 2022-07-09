@@ -162,4 +162,20 @@
       </view>
     </view>
   </view>
+
+  <view class="session">
+    <view class="session-title">
+      <text>Loading state</text>
+    </view>
+
+    <view class="demo">
+      <view style="margin-bottom: .5rem;">
+        <x-button type="primary" loading>Primary</x-button>
+      </view>
+
+      <view style="margin-bottom: .5rem;">
+        <x-button loading>Secondary</x-button>
+      </view>
+    </view>
+  </view>
 </view>

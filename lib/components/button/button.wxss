@@ -43,6 +43,7 @@ button:not([size="mini"]) {
  */
 
 .btn {
+  position: relative;
   display: inline-block;
   text-align: center;
   color: var(--pui-btn-contrast-color);
@@ -147,6 +148,33 @@ button:not([size="mini"]) {
 
 
 /**
+ * Loading state
+ */
+
+.btn-loading:active {
+  background-color: var(--pui-btn-main-color);
+}
+
+.btn-loading:after {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 99%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: 1.2s slide infinite;
+  border: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+/**
  * Mics
  */
 
@@ -156,4 +184,19 @@ button:not([size="mini"]) {
 
 .btn-block {
   display: block;
+}
+
+
+/**
+ * Animations
+ */
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 }
