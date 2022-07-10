@@ -1,0 +1,8 @@
+<view>
+  <view>
+    <slot></slot>
+  </view>
+  <view class="collapse {{ display ? 'show' : '' }}">
+    <slot name="collapsible"></slot>
+  </view>
+</view>

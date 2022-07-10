@@ -1,0 +1,9 @@
+.collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 250ms ease-in-out;
+}
+
+.show {
+  max-height: 100vh;
+}
