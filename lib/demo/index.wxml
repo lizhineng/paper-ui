@@ -24,6 +24,10 @@
       <x-radio-item data-demo="icon">
         Icon
       </x-radio-item>
+
+      <x-radio-item data-demo="collapse">
+        Collapse
+      </x-radio-item>
     </x-radio-group>
   </view>
 </view>

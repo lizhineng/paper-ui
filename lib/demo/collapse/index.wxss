@@ -1,0 +1,4 @@
+.collapsible {
+  padding: 1rem;
+  background-color: var(--color-gray-100);
+}

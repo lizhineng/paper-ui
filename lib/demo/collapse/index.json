@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Collapse",
+  "usingComponents": {
+    "x-collapse": "../../components/collapse/collapse",
+    "x-button": "../../components/button/button"
+  }
+}
