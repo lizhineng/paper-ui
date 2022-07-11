@@ -10,7 +10,24 @@
 
     <view class="demo">
       <x-collapse id="collapse1">
-        <x-button bindtap="toggle1">Click me</x-button>
+        <x-button bindtap="toggle" data-collapse-target="#collapse1">Click me</x-button>
+        <view slot="collapsible">
+          <view class="collapsible">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </view>
+        </view>
+      </x-collapse>
+    </view>
+  </view>
+
+  <view class="session">
+    <view class="session-title">
+      <text>Hidden on default</text>
+    </view>
+
+    <view class="demo">
+      <x-collapse id="collapse2" display="{{ false }}">
+        <x-button bindtap="toggle" data-collapse-target="#collapse2">Click me</x-button>
         <view slot="collapsible">
           <view class="collapsible">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

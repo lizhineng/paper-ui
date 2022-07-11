@@ -3,8 +3,15 @@ Component({
     multipleSlots: true
   },
 
+  properties: {
+    display: {
+      type: Boolean,
+      value: true
+    }
+  },
+
   data: {
-    display: false
+    display: true
   },
 
   methods: {
