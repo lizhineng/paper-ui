@@ -17,8 +17,13 @@ Component({
   methods: {
     toggle() {
       const { display } = this.data
+      const value = ! display
 
-      this.setData({ display: ! display })
+      this.setData({ display: value })
+
+      this.triggerEvent('collapse', {
+        value
+      })
     }
   }
 })
