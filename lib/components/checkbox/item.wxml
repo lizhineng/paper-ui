@@ -1,5 +1,5 @@
 <view
-  class="{{ classes }}"
+  class="checkbox-item {{ checked ? 'item-checked' : '' }}"
   bindtap="onTap"
 >
   <slot></slot>

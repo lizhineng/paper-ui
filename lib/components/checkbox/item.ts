@@ -20,17 +20,6 @@ Component({
     }
   },
 
-  observers: {
-    checked(value) {
-      this.setData({
-        classes: [
-          'checkbox-item',
-          value ? 'item-checked' : null
-        ].filter(x => x).join(' ')
-      })
-    }
-  },
-
   methods: {
     onTap() {
       this.triggerEvent('item-change', {
