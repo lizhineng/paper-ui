@@ -23,10 +23,6 @@ Component({
       const { value } = e.detail
 
       await this.toggle(value)
-
-      this.triggerEvent('change', {
-        value: this.data.value
-      })
     },
 
     has(value) {
@@ -46,6 +42,8 @@ Component({
         value: [...this.data.value, value]
       })
 
+      this.triggerChangeEvent()
+
       return true
     },
 
@@ -63,7 +61,21 @@ Component({
         value: data
       })
 
+      this.triggerChangeEvent()
+
       return true
+    },
+
+    reset() {
+      this.setData({ value: [] })
+
+      this.triggerChangeEvent()
+    },
+
+    triggerChangeEvent() {
+      this.triggerEvent('change', {
+        value: this.data.value
+      })
     }
   }
 })
