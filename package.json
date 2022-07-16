@@ -1,7 +1,7 @@
 {
-  "name": "paper-ui",
-  "version": "1.0.0",
-  "description": "A minimal UI for WeChat Mini Program.",
+  "name": "@lizhineng/paper-ui",
+  "version": "0.0.1",
+  "description": "A clean, minimal user interface for WeChat Mini Program.",
   "miniprogram": "lib/components",
   "main": "index.js",
   "scripts": {
